@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    overflow: auto;
+    background-image: url(https://media.istockphoto.com/id/151812569/es/foto/amigos-disfrutando-de-bola-de-lucha.jpg?s=612x612&w=0&k=20&c=0mz3fKbp2XklK8PbgUhoc4ndyve7Kxnxv6YD8CiIBrA=);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+.main{
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    bottom: 0rem;
+    left: 0rem;
+
+    max-width: 100%;
+
+    color: #d5fdd7;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+    border-radius: 0.5em;
+
+    font-size:1em;
+    font-weight: bold;
+
+    padding: 3em;
+    margin: auto;
+
+    overflow: auto;
+    z-index: 3;
+    background-color:rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    background-color:rgba(235, 235, 235, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 1em 0.5em;
+    border-radius: 0.5em;
+}
+.time {
+   
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1rem 1em;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(40px);
+    border-radius: 0.5em;
+    
+}
+h1{
+    font-size: 3em;
+    text-transform: uppercase;
+    color: rgb(224, 224, 230);
+}
+.time strong{
+    font-size: 3em;
+
+}
+
+.time span{
+    font-size: 2em;
+}
+
+@media screen and (max-width:767px) {
+    .main{
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        max-width: 100%;
+        gap: 0.5em;
+        border-radius: 0;
+    }
+    .time{
+        padding: 0.5em 0.5em;
+    }
+    .time strong{
+        font-size: 2em;
+    
+    }
+    .time span{
+        font-size: 1em;
+    }
+    
+}
